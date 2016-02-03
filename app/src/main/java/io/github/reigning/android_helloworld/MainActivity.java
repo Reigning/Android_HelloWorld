@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
     public void 你才是傻比(View view) {
 //        Toast.makeText(this, "你才是真正的最傻的傻比!", Toast.LENGTH_SHORT).show();    //弹出一个自动消失的提示框
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setMessage("你才是真正的最傻的傻比!~ 啦啦啦德玛西亚");
+        builder.setMessage("你才是真正的最傻的傻比!~\n啦啦啦德玛西亚");
         builder.setTitle("哈哈被整了吧");
         builder.setPositiveButton("关闭", new DialogInterface.OnClickListener() {
             @Override
@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
         builder.setMessage("小小测试 APP\n本人Java首个App 部分机型没有适配 有些bug撒\n回到正题 勇敢的战士们 接受挑战吧 啊哈哈哈\n本程序有毒 请做好心理准备\n逗比君练手专用App\n大家不要乱用 后果自负");
         builder.setTitle("小小测试");
-        builder.setPositiveButton("\n承担风险, 接受测试! 我保证: 后果自负!\n", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("\n承担风险, 接受测试! 保证后果自负!\n", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
