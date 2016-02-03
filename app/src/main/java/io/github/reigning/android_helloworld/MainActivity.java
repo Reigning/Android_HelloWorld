@@ -98,12 +98,27 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if(a == 8) {
+            this.输出结果(view);
             //进入界面layout2.xml
             setContentView(R.layout.layout2);
         }else{
             a = 1;
         }
+        //这段代码有些啰嗦 不想改...
 
+    }
+
+    public void 输出结果(View view) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setMessage("根据大数据(装比)复杂的处理,\n 经过0.000000001秒, 得出如下结果:\n 别看了, 说你呢, 哈哈哈...\n我都不信,,,");
+        builder.setTitle("分析结果完毕");
+        builder.setPositiveButton("关闭窗口", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.create().show();
     }
 
     public void 你才是傻比(View view) {
@@ -175,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
 
     protected void 程序运行开始对话框() {
         AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
-        builder.setMessage("小小测试 APP\n本人Java首个App 些许机型没有适配 有些bug撒\n回到正题 勇敢的战士们 接受挑战吧 啊哈哈哈\n本程序有毒 请做好心理准备\n逗比君练手专用App\n大家不要乱用 后果自负");
+        builder.setMessage("小小测试 APP\n本人Java首个App 部分机型没有适配 有些bug撒\n回到正题 勇敢的战士们 接受挑战吧 啊哈哈哈\n本程序有毒 请做好心理准备\n逗比君练手专用App\n大家不要乱用 后果自负");
         builder.setTitle("小小测试");
         builder.setPositiveButton("\n承担风险, 接受测试! 我保证: 后果自负!\n", new DialogInterface.OnClickListener() {
             @Override
@@ -197,7 +212,7 @@ public class MainActivity extends AppCompatActivity {
         // 从API11开始android推荐使用android.content.ClipboardManager
         // 为了兼容低版本我们这里使用旧版的android.text.ClipboardManager，虽然提示deprecated，但不影响使用。
         ClipboardManager cm = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-        // 将文本内容放到系统剪贴板里。
+        // 将文本内容"610915518"放到系统剪贴板里。
         cm.setText("610915518");
         Toast.makeText(this, "复制成功, 可以加我为好友了.", Toast.LENGTH_LONG).show();
     }
