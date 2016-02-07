@@ -6,4 +6,6 @@
 假期闲的蛋疼  
 写了个蛋疼的App  
 2016年02月03日13:28:04  
+源代码懒人访问地址：  
+https://github.com/Reigning/Android_HelloWorld/blob/master/app/src/main/java/io/github/reigning/android_helloworld/MainActivity.java  
 #EOF
