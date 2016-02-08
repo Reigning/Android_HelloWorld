@@ -8,4 +8,6 @@
 2016年02月03日13:28:04  
 源代码懒人访问地址：  
 https://github.com/Reigning/Android_HelloWorld/blob/master/app/src/main/java/io/github/reigning/android_helloworld/MainActivity.java  
+部分截图  
+![截图1](https://raw.githubusercontent.com/Reigning/Android_HelloWorld/master/%E6%88%AA%E5%9B%BE/%E6%88%AA%E5%9B%BE1.jpg)  
 #EOF
